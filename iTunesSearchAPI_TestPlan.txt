@@ -18,7 +18,7 @@ TC2: Verify response for request with default values of parameter keys
 TC3: Verify response for request with missing required key value pair
   Request: https://itunes.apple.com/search? country=US&media=music&limit=50
     key-value pair:
-      term: ìî                                                  
+      term: ‚Äú‚Äù                                                  
       country:US
        media:music
        limit:50
@@ -32,6 +32,7 @@ TC4: Verify response for request with invalid data
 TC5: Verify response for request with missing optional key value pair
   Request: https://itunes.apple.com/search?term=michael+jackson&media=music&limit=50
     key-value pair:
-      term: michael jackson                                   country:""
+      term: michael jackson                                   
+      country:""
        media:music
        limit:50
