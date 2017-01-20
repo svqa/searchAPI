@@ -1,37 +1,19 @@
 package com.iapple.iTunesSearchAPI;
-
-
 import java.util.ArrayList;
-
 import java.util.Map;
-
-
 import static org.testng.Assert.*;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import com.jayway.restassured.http.ContentType;
-
-
-
-
 import com.jayway.restassured.response.Response;
 importcom.jayway.restassured.specification.RequestSpecification;
-
-
 import static com.jayway.restassured.RestAssured.given;
-
 import java.io.File;
 import java.io.IOException;
-
-
 import SupportClass.*;
 
-
 public class iTunesSearchAPI_Tests  {
-
-
 
 @BeforeClass
 
