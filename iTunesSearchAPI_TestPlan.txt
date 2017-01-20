@@ -1,0 +1,37 @@
+Feature: Verify responses(status code, count,errormessages) for the search requests in following scenarios
+TC 1: Verify response for request with valid key value pairs
+    Request: https://itunes.apple.com/search?term=michael+jackson&country=US&media=music&limit=51
+
+    key-value pair:
+      term: michael jackson
+      country:US
+       media:music
+       limit:51
+
+TC2: Verify response for request with default values of parameter keys
+  Request: https://itunes.apple.com/search?term= michael+jackson &country=US&media=all&limit=50
+    key-value pair:
+      term: michael jackson
+      country:US
+       media:all
+       limit:50
+TC3: Verify response for request with missing required key value pair
+  Request: https://itunes.apple.com/search? country=US&media=music&limit=50
+    key-value pair:
+      term: “”                                                  
+      country:US
+       media:music
+       limit:50
+TC4: Verify response for request with invalid data
+  Request: https://itunes.apple.com/search?term=michael+jackson& country=US&media=featureFilm&limit=50
+    key-value pair:
+      term: michael jackson
+      country:US
+       media:featureFilm
+       limit:50
+TC5: Verify response for request with missing optional key value pair
+  Request: https://itunes.apple.com/search?term=michael+jackson&media=music&limit=50
+    key-value pair:
+      term: michael jackson                                   country:""
+       media:music
+       limit:50
