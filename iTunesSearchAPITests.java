@@ -55,7 +55,7 @@ data[][]= {
           {"michael jackson","US","all",50, 200},
           {"","US","music",50, 200},
           {"michael jackson","US","featureFilm",50,400}
-    }
+    };
 return data;
 }
 
@@ -74,7 +74,7 @@ data[][]= {
           {"michael jackson","US","all",50, 50},
           {"","US","music",50, 0},
           {"michael jackson","US","",50,50}
-    }
+    };
 return data;
 }
 
@@ -94,7 +94,7 @@ data[][]= {
           {"michael jackson","US","all",50, null},
           {"michael jackson","US","featureFilm",50,"Invalid value(s) for key(s): [mediaType]},
           {"","SSOT","music",50,"Invalid value(s) for key(s): [country]",}
-    }
+    };
 return data;
 }
 
@@ -103,5 +103,4 @@ public void tearDown (){
      Specs.resetBaseURI();
      Specs.resetBasePath();
 }
-
 }
