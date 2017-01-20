@@ -1,15 +1,9 @@
 package SupportClass;
 
-
 import com.jayway.restassured.http.ContentType;
-
 import com.jayway.restassured.RestAssured.*;
 
-
-
 public class Specs {
-
-
 
 public static void setBaseURI (String baseUri){
 RestAssured.baseURI= baseUri;
@@ -26,7 +20,4 @@ RestAssured.baseURI= null;
 public static void resetBasePath(){
 RestAssured.basePath= null;
 }
-
-
-
 }
